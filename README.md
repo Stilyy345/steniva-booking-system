@@ -72,12 +72,10 @@ If the temporary hold expires, the appointment time becomes available again.
 Clone the repository and install the dependencies:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
-cd BookFlow
+git clone https://github.com/Stilyy345/steniva-booking-system.git
+cd steniva-booking-system
 npm ci
 ```
-
-Replace `YOUR_REPOSITORY_URL` with the actual GitHub repository URL after publishing.
 
 ### Environment Configuration
 
@@ -95,33 +93,26 @@ MAILJET_SENDER_EMAIL=your_verified_sender_email
 
 Never commit actual credentials or API keys to GitHub.
 
-### Start the Backend
+
+### Run STENIVA Locally
+
+Start the application:
 
 ```bash
 npm start
 ```
 
-The start process initializes the SQLite bookings table and runs the Express server.
+This command initializes the SQLite database and starts the Node.js/Express server.
 
-Local backend address:
+Open the application in your browser:
 
-`http://localhost:3000`
+- Home page: http://localhost:3000
+- Booking page: http://localhost:3000/booking.html
 
-### Start the Frontend Locally
+The Express server serves both the frontend and backend. No separate frontend server is required.
 
-From the project directory, run:
+**Note:** STENIVA is currently a locally hosted portfolio project. The URLs above work only when the application is running on your computer. The GitHub repository provides the source code and project documentation, not a publicly hosted live demo.
 
-```bash
-python -m http.server 5500
-```
-
-On Windows, `py -m http.server 5500` can also be used.
-
-Open the website at:
-
-`http://127.0.0.1:5500`
-
-The frontend and backend must both be running for the booking functionality to work.
 
 ## Project Structure
 
