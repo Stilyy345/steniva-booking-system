@@ -3,7 +3,10 @@
 
 // Frontend booking system
 
-const API_BASE = "http://localhost:3000";
+const API_BASE =
+    window.location.port === "5500"
+        ? "http://localhost:3000"
+        : window.location.origin;
 
 // Available treatments
 

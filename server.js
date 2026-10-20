@@ -11,7 +11,7 @@ const SQLiteStore = require("better-sqlite3-session-store")(session);
 const nodemailer = require("nodemailer");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Services
 
@@ -75,6 +75,23 @@ app.use(cors({
 }));
 
 app.use(express.json());
+
+ // Serve frontend files
+
+const path = require("node:path");
+
+app.use("/css", express.static(path.join(__dirname, "css")));
+app.use("/js", express.static(path.join(__dirname, "js")));
+app.use("/assets", express.static(path.join(__dirname, "assets")));
+
+app.get(["/", "/index.html"], function(req, res) {
+    res.sendFile(path.join(__dirname, "index.html"));
+});
+
+app.get("/booking.html", function(req, res) {
+    res.sendFile(path.join(__dirname, "booking.html"));
+});
+
 
 // Admin sessions
 
