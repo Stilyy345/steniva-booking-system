@@ -4,6 +4,54 @@ A full-stack appointment booking web application developed for a fictional premi
 
 STENIVA combines a modern, responsive interface with a Node.js backend, SQLite database, real-time appointment availability, and an administrative booking management dashboard.
 
+
+## Screenshots
+
+The following screenshots demonstrate STENIVA's user interface, appointment booking workflow, automated email notifications, and administrative features.
+
+### 1. Homepage
+
+The homepage introduces STENIVA and makes it easy for visitors to book an appointment.
+
+<img src="screenshots/homepage.png" alt="STENIVA Homepage" width="680">
+
+### 2. Wellness Services
+
+An overview of the available treatments, including service descriptions, durations, pricing, and direct booking buttons.
+
+<img src="screenshots/services.png" alt="STENIVA Wellness Services" width="680">
+
+### 3. Appointment Date & Time Selection
+
+Customers can select their preferred specialist, appointment date, and available time slot. A temporary five-minute reservation hold helps prevent conflicting bookings during checkout.
+
+<img src="screenshots/booking-form.png" alt="Appointment Booking Form" width="680">
+
+### 4. Booking Review
+
+Before confirming an appointment, customers can review their selected treatment, specialist, date, and time.
+
+<img src="screenshots/booking-summary.png" alt="Appointment Booking Summary" width="680">
+
+### 5. Successful Booking Confirmation
+
+After a successful reservation, the application displays a confirmation page containing the appointment details and a unique booking reference.
+
+<img src="screenshots/booking-success.png" alt="Successful Booking Confirmation" width="680">
+
+### 6. Automated Email Confirmation
+
+STENIVA integrates Mailjet to automatically send booking confirmation emails containing the customer's appointment details and booking reference.
+
+<img src="screenshots/email-confirmation.png" alt="Automated Booking Confirmation Email" width="680">
+
+### 7. Admin Booking Dashboard
+
+A session-protected administration dashboard for managing appointments, viewing booking statistics, searching reservations, filtering records, and cancelling appointments.
+
+<img src="screenshots/admin-dashboard.png" alt="STENIVA Admin Dashboard" width="680">
+
+
 ## Features
 
 ### Customer Experience
