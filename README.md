@@ -4,6 +4,7 @@ A full-stack appointment booking web application developed for a fictional premi
 
 STENIVA combines a modern, responsive interface with a Node.js backend, SQLite database, real-time appointment availability, and an administrative booking management dashboard.
 
+**Live Demo:** https://steniva.helioho.st
 
 ## Screenshots
 
@@ -159,7 +160,9 @@ Open the application in your browser:
 
 The Express server serves both the frontend and backend. No separate frontend server is required.
 
-**Note:** STENIVA is currently a locally hosted portfolio project. The URLs above work only when the application is running on your computer. The GitHub repository provides the source code and project documentation, not a publicly hosted live demo.
+**Note:** The localhost URLs above are used for local development. The application is also deployed online.
+
+**Live Demo:** https://steniva.helioho.st
 
 
 ## Project Structure
@@ -194,10 +197,11 @@ BookFlow/
 
 ## Project Status
 
-Core booking and administrator functionality has been implemented and tested locally.
+STENIVA is deployed on HelioHost and is accessible through a public live demo.
 
-Cloud deployment and the public demo link are planned as the next stage.
+Core booking functionality, email notifications, appointment management, and the admin dashboard have been implemented and tested.
 
+Additional production security hardening is in progress.
 ## Purpose
 
 STENIVA was developed as a portfolio project to demonstrate practical frontend and backend development, REST API integration, relational database management, asynchronous operations, and appointment scheduling logic.
